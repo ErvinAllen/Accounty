@@ -1,9 +1,7 @@
-'use client'
-import { useState, useEffect } from "react";
 import "./globals.css";
 import SideBar from "@/components/SideBar";
 
-const metadata = {
+export const metadata = {
   title: "Accounty",
   description: "Calculate Loan and More",
 };
