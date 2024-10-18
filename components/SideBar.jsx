@@ -21,13 +21,13 @@ function SideBar() {
   }, [isDark]);
 
   return (
-    <motion.div className={`bg-[#F4F4F9] dark:bg-slate-800 h-screen ${isSideBarOpen ? 'w-64' : 'w-24'} border-r border-[#007CFF] dark:border-black fixed z-10`} animate={{ width: isSideBarOpen ? 256 : 96 }}>
+    <motion.div className={`bg-[#5aabf3] border-r border-blue-300 dark:bg-slate-800 h-screen ${isSideBarOpen ? 'w-64' : 'w-24'} border-r border-slate-300 dark:border-black fixed z-10`} animate={{ width: isSideBarOpen ? 256 : 96 }}>
       <div className='flex p-4'>
         <MaterialUISwitch onClick={() => {setIsDark(!isDark)}} />
       </div>
       <div className='flex gap-y-4 flex-col'>
 
-        <motion.button onClick={() => {setIsSideBarOpen(!isSideBarOpen)}} className='flex w-fit rounded-2xl dark:text-white/70 hover:bg-blue-400 p-4' whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+        <motion.button onClick={() => {setIsSideBarOpen(!isSideBarOpen)}} className='flex w-fit rounded-2xl dark:text-white/70 hover:bg-blue-500 p-4' whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
           <MenuIcon  sx={{ fontSize: '58px' }} className='hover:cursor-pointer'/>
         </motion.button>
 
