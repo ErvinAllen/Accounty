@@ -5,7 +5,6 @@ import InputAdornment from '@mui/material/InputAdornment';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import PercentIcon from '@mui/icons-material/Percent';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
-import ReceiptIcon from '@mui/icons-material/Receipt';
 import AddIcon from '@mui/icons-material/Add';
 import { useState , useRef } from "react";
 import ShowChartIcon from '@mui/icons-material/ShowChart';
@@ -17,7 +16,7 @@ import Alert from '@mui/material/Alert';
 export var eachMonthData = {};
 export var totals = [];
 
-function page() {
+function Page() {
 
   const [amount, setAmount] = useState(0);
   const [interest, setInterest] = useState(0);

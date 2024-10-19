@@ -1,4 +1,4 @@
-import { totals } from './page';
+import { totals } from './Page';
 import { PieChart } from '@mui/x-charts/PieChart';
 
 export default function BasicPie() {

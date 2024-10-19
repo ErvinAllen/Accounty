@@ -1,18 +1,7 @@
-import { Playfair_Display } from '@next/font/google';
-import { Nanum_Gothic } from '@next/font/google';
+
 import Link from 'next/link';
 
-const playfairDisplay = Playfair_Display({
-  subsets: ['latin'],
-  weight: ['400', '700'], 
-  variable: '--font-playfair-display',
-});
 
-const nanumGothic = Nanum_Gothic({
-  subsets: ['latin'],
-  weight: ['400'],
-  variable: '--font-nanum'
-})
 
 export const metadata = {
   title: "Loan Tracker",
@@ -21,7 +10,7 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <main className={`${playfairDisplay.variable} ${nanumGothic.variable} w-full overflow-visible ml-24`}>
+    <main className={`w-full overflow-visible ml-24`}>
       <div className="bg-[#007CFF] dark:bg-black/70 min-h-48 w-auto rounded-3xl m-8 flex flex-col p-6">
         <h1 className="md:text-4xl text-2xl text-white mb-2">Welcome to <span className='text-5xl bg-gradient-to-r from-red-600  to-yellow-500 bg-clip-text text-transparent'>Accoutify</span> – Your Financial Toolkit for <span className='text-green-500'>Success!</span></h1>
         <p className='text-2xl text-slate-200'>Take control of your finances with our comprehensive suite of calculators. Whether you’re planning to take out a loan, make a trade, or invest for the future, Accountify has the tools you need to make informed decisions with confidence.</p>

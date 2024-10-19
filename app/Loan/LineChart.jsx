@@ -1,5 +1,5 @@
 import { BarChart } from '@mui/x-charts/BarChart';
-import { eachMonthData } from './page';
+import { eachMonthData } from './Page';
 
 
 
