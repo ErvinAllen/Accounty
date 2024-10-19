@@ -21,7 +21,7 @@ function SideBar() {
   }, [isDark]);
 
   return (
-    <motion.div className={`bg-[#5aabf3] border-r border-blue-300 dark:bg-slate-800 h-screen ${isSideBarOpen ? 'w-64' : 'w-24'} border-r border-slate-300 dark:border-black fixed z-10`} animate={{ width: isSideBarOpen ? 256 : 96 }}>
+    <motion.div className={`bg-[#5aabf3] border-r-2 border-blue-600 dark:bg-slate-800 h-screen ${isSideBarOpen ? 'w-64' : 'w-24'} border-r border-slate-300 dark:border-black fixed z-10`} animate={{ width: isSideBarOpen ? 256 : 96 }}>
       <div className='flex p-4'>
         <MaterialUISwitch onClick={() => {setIsDark(!isDark)}} />
       </div>
