@@ -1,11 +1,6 @@
 import { BarChart } from '@mui/x-charts/BarChart';
 import { eachMonthData } from './Page';
 
-
-
-
-
-
 export default function BasicBars() {
   return (
     <BarChart

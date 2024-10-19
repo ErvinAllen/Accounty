@@ -1,8 +1,6 @@
 
 import Link from 'next/link';
 
-
-
 export const metadata = {
   title: "Loan Tracker",
   description: "Calculate Loan and More",
